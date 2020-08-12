@@ -206,3 +206,48 @@ for i in s1:
 
 Keymax = max(freq, key=freq.get) 
 print(Keymax)
+
+#EXCEPTIONS: error that terminates the execution of program
+
+#Handling exceptions: if not handled, the program crashes i.e.
+#execution will completely stop. If handled correctly,
+#'except' block will be executed and then program will continue 
+
+try: 
+    print('this will contain the code that we are testing')
+except ValueError:
+    print('If error occurs, this will run and execution continues')
+except (IndexError, ZeroDivisionError):
+    print('If error occurs, this will run and execution continues')
+else:
+    print('If no error, this will execute')
+finally:
+    print('Executes no matter what happens above')
+    print('Usually used to release resources like \
+          closing files, DB connections')
+
+#when one except block is executed, execution comes out of the block
+#and no other 'except' statements are executed
+#just like switch-case
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
